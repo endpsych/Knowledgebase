@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Python virtual environment
+.venv/
+
+# Build output
+build/
+dist/
+
+# Electron
+.electron/
+
+# Environment / secrets
+.env
+.env.local
+
+# User data (papers library, settings — machine-specific)
+data/
+
+# Generated assets (copied from node_modules by postinstall)
+public/pdf.worker.min.mjs
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

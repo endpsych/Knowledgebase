@@ -1,0 +1,53 @@
+{
+  "name": "knowledgebase",
+  "version": "0.1.0",
+  "description": "Knowledgebase — literature, ontology, ingestion & governance",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run react\" \"wait-on http://localhost:3002 && electron .\"",
+    "react": "cross-env PORT=3002 react-scripts start",
+    "build": "cross-env PORT=3002 react-scripts build && electron-builder",
+    "electron": "electron .",
+    "dev": "npm start",
+    "postinstall": "node -e \"require('fs').copyFileSync('node_modules/pdfjs-dist/build/pdf.worker.min.mjs','public/pdf.worker.min.mjs')\""
+  },
+  "dependencies": {
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "react-pdf": "^10.4.1",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^29.0.0",
+    "electron-builder": "^24.9.1",
+    "react-scripts": "5.0.1",
+    "wait-on": "^7.2.0"
+  },
+  "homepage": ".",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
+  },
+  "build": {
+    "appId": "com.knowledgebase.app",
+    "productName": "Knowledgebase",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "build/**/*",
+      "src/main.js",
+      "src/preload.js"
+    ]
+  }
+}
