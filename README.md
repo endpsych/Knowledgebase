@@ -2,6 +2,9 @@
 
 A desktop application for building and managing formal knowledge bases. Built with **Electron + React**, it covers the full lifecycle of a KB system — from literature ingestion and document parsing through to ontology design, storage configuration, trust governance, and documentation.
 
+![3D Intro](gifs/3d-intro.gif)
+
+
 ---
 
 ## Author
@@ -98,6 +101,10 @@ A full-featured reading environment that opens when you click a paper with a lin
   - Events with actors and outcomes
   - Processes with steps, inputs, and outputs
 
+
+### Adding a PDF file to the reader
+![PDF Upload & Notetaking](gifs/pdfupload-notetaking.gif)
+
 ---
 
 ### 🔬 Parsing
@@ -128,6 +135,21 @@ The document parsing workbench. Select a paper from the library, choose a parser
 - **Section detection** — auto-detects document sections with word counts, page spans, and a visual minimap
 - **Compare mode** — run up to 3 parsers side-by-side on the same document
 - **Extraction history** per paper
+
+### PDF parsing
+![PDF Parsing](gifs/pdfparsing.gif)
+
+### Parsers comparison
+![Compare Parsers](gifs/compare-parsers.gif)
+
+### Segmentation Hierarchy
+![Segmentation Hierarchy](gifs/segmentation-hierarchy.gif)
+
+### Document segments 3d visualization
+![3D Visualization](gifs/3d-visualization.gif)
+
+
+
 
 #### References Panel
 
@@ -213,7 +235,17 @@ To use the LlamaParse cloud parser, click the **API Key** button that appears wh
 
 Get a key at [cloud.llamaindex.ai](https://cloud.llamaindex.ai) → API Keys (free tier: 1,000 pages/day).
 
+
+## Knowledgebase Demos
+
+
+
+
+
+
+
 ---
+
 
 ## Project Structure
 
